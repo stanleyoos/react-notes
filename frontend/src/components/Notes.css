@@ -1,0 +1,46 @@
+.note {
+  background: white;
+  padding: 10px 10px;
+  text-align: left;
+  margin: 20px auto;
+  border-radius: 6px;
+  max-width: 600px;
+}
+
+.description {
+  padding: 2px;
+  display: block;
+  color: black;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.note p {
+  padding: 2px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.note button {
+  color: white;
+  padding: 4px 6px;
+  border: 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  min-width: 100px;
+  background-color: rgb(120, 23, 211);
+}
+
+.note button:hover {
+  background-color: rgb(134, 51, 211);
+}
+
+.note button.delete {
+  background-color: rgb(209, 5, 5);
+}
+
+.note button.delete:hover {
+  background-color: rgb(235, 87, 87);
+}
