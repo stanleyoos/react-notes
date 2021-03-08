@@ -10,6 +10,27 @@ p {
   color: white;
 }
 
+button {
+  color: white;
+  padding: 4px 6px;
+  border: 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  min-width: 100px;
+  background-color: rgb(120, 23, 211);
+}
+
+input {
+  display: block;
+  width: 80%;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5rem;
+  border: 1px solid rgb(231, 195, 127);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
