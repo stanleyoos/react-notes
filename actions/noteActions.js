@@ -23,17 +23,17 @@ class NoteActions {
   }
 
   async getNote(req, res) {
-    const id = req.params.id;
-    const note = await Note.findOne({ _id: id });
+    const _id = req.params.id;
+    const note = await Note.findOne({ _id: _id });
     res.status(200).json(note);
   }
 
   async updateNote(req, res) {
-    const id = req.params.id;
+    const _id = req.params.id;
     const title = req.body.title;
     const body = req.body.body;
 
-    const note = await Note.findOne({ _id: id });
+    const note = await Note.findOne({ _id: _id });
     note.title = title;
     note.body = body;
 
@@ -43,8 +43,8 @@ class NoteActions {
   }
 
   async deleteNote(req, res) {
-    const id = req.params.id;
-    await Note.deleteOne({ _id: id });
+    const _id = req.params.id;
+    await Note.deleteOne({ _id: _id });
     res.sendStatus(204);
   }
 }
