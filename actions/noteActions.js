@@ -39,7 +39,7 @@ class NoteActions {
 
     await note.save();
 
-    res.status(200).json(note);
+    res.status(201).json(note);
   }
 
   async deleteNote(req, res) {

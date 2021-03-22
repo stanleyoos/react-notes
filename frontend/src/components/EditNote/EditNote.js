@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 
 const EditNote = (props) => {
+  // create local state using hooks and set it with props
   const [title, setTitle] = useState(props.title);
   const [desc, setDesc] = useState(props.body);
 
+  // create local note with title, body, id
+  // invoke parent's function onEdit with edited note
   const editNote = () => {
     const note = {
       title: title,
@@ -14,6 +17,8 @@ const EditNote = (props) => {
   };
 
   return (
+    // two inputs with value and onChange connected with state
+    // on click Zapisz calls editNote
     <div className="note">
       <label>Tytuł: </label>
       <input
@@ -27,7 +32,7 @@ const EditNote = (props) => {
         onChange={(e) => setDesc(e.target.value)}
         type="text"
       />
-      <button onClick={() => editNote()}>Zapisz</button>{" "}
+      <button onClick={() => editNote()}>Zapisz</button>
     </div>
   );
 };

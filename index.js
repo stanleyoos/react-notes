@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 // routes
 app.use("/api/", apiRouter);
 
-// server
+// server is listening
 app.listen(port, () => {
   console.log(`serwer słucha na porcie: ${port}`);
 });
